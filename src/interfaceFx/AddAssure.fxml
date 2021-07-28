@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="523.0" prefWidth="466.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaceFx.AddAssureController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="58.0" prefWidth="454.0">
+         <children>
+            <Text fx:id="label" fill="#8e44ad" strokeType="OUTSIDE" strokeWidth="0.0" text="Détails des Assurés">
+               <font>
+                  <Font name="Bauhaus 93" size="35.0" />
+               </font>
+            </Text>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nom" wrappingWidth="74.13671875">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="-7.0" right="30.0" />
+               </HBox.margin>
+            </Text>
+            <JFXTextField fx:id="nomid" prefHeight="31.0" prefWidth="332.0">
+               <font>
+                  <Font name="Georgia" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </JFXTextField>
+         </children>
+         <VBox.margin>
+            <Insets top="25.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="68.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Prénom" wrappingWidth="74.13671875">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="-7.0" right="30.0" />
+               </HBox.margin>
+            </Text>
+            <JFXTextField fx:id="prenomid" prefHeight="31.0" prefWidth="331.0">
+               <font>
+                  <Font name="Georgia" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </JFXTextField>
+         </children>
+         <VBox.margin>
+            <Insets top="25.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="68.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date de naissance" wrappingWidth="85.13671875">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="15.0" right="30.0" />
+               </HBox.margin>
+            </Text>
+            <JFXDatePicker fx:id="dateid" prefHeight="25.0" prefWidth="327.0">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></JFXDatePicker>
+         </children>
+         <VBox.margin>
+            <Insets top="25.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="68.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Sexe" wrappingWidth="74.13671875">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="15.0" right="30.0" />
+               </HBox.margin>
+            </Text>
+            <JFXRadioButton fx:id="radio_mid" text="Masculin">
+               <HBox.margin>
+                  <Insets left="-15.0" right="45.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Georgia" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="radio_fid" text="Féminin">
+               <HBox.margin>
+                  <Insets left="-15.0" right="45.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Georgia" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXRadioButton>
+         </children>
+         <VBox.margin>
+            <Insets top="25.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="68.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Adresse" wrappingWidth="74.13671875">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="15.0" right="30.0" />
+               </HBox.margin>
+            </Text>
+            <JFXTextField fx:id="adresseid" prefHeight="31.0" prefWidth="335.0">
+               <font>
+                  <Font name="Georgia" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </JFXTextField>
+         </children>
+         <VBox.margin>
+            <Insets top="25.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="68.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Téléphone" wrappingWidth="80.13671875">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="15.0" right="30.0" />
+               </HBox.margin>
+            </Text>
+            <JFXTextField fx:id="telephoneid" prefHeight="31.0" prefWidth="331.0">
+               <font>
+                  <Font name="Georgia" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </JFXTextField>
+         </children>
+         <VBox.margin>
+            <Insets top="25.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="94.0" prefWidth="472.0">
+         <VBox.margin>
+            <Insets top="15.0" />
+         </VBox.margin>
+         <children>
+            <JFXButton fx:id="btn_save" alignment="CENTER" layoutX="177.0" layoutY="28.0" onAction="#save" prefHeight="50.0" prefWidth="160.0" style="-fx-background-color: #8e44ad;" text="Enregistrer" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="30.0" right="30.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Century Gothic Bold" size="22.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btn_clean" alignment="CENTER" layoutX="177.0" layoutY="28.0" onAction="#clean" prefHeight="50.0" prefWidth="160.0" style="-fx-background-color: #1e9bfb;" text="Annuler" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="30.0" right="30.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Century Gothic Bold" size="22.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets top="18.0" />
+   </padding>
+</VBox>

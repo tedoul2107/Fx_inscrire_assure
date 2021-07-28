@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="442.0" prefWidth="718.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaceFx.AuthentificationController">
+   <children>
+      <ImageView fitHeight="450.0" fitWidth="756.0" layoutX="-5.0" AnchorPane.bottomAnchor="-8.0" AnchorPane.leftAnchor="-5.0" AnchorPane.rightAnchor="-9.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../image/pp.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="1.0" layoutY="4.0" prefHeight="434.0" prefWidth="366.0">
+         <children>
+            <AnchorPane layoutX="14.0" layoutY="17.0" prefHeight="401.0" prefWidth="338.0" style="-fx-background-color: #edf2f4;">
+               <children>
+                  <Text layoutX="126.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login" wrappingWidth="86.18359375">
+                     <font>
+                        <Font name="Georgia Bold" size="26.0" />
+                     </font>
+                  </Text>
+                  <JFXTextField fx:id="txt_login" alignment="CENTER" layoutX="25.0" layoutY="157.0" prefHeight="28.0" prefWidth="299.0" promptText="Nom d'utilisateur">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXPasswordField fx:id="txt_pass" alignment="CENTER" layoutX="26.0" layoutY="242.0" prefHeight="32.0" prefWidth="299.0" promptText="Mot de passe">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </JFXPasswordField>
+                  <JFXButton fx:id="btn_connexion" alignment="CENTER" layoutX="41.0" layoutY="315.0" onAction="#Connection" prefHeight="50.0" prefWidth="255.0" style="-fx-background-color: #39a0ed; -fx-background-radius: 50;" text="Connexion" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia Bold" size="21.0" />
+                     </font>
+                  </JFXButton>
+                  <FontAwesomeIconView fill="#5b5b5b" glyphName="USER" layoutX="132.0" layoutY="76.0" size="90" wrappingWidth="73.4285717010498" />
+                  <ImageView fitHeight="43.0" fitWidth="42.0" layoutX="20.0" layoutY="146.0">
+                     <image>
+                        <Image url="@../image/icons8_user_60px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="43.0" fitWidth="42.0" layoutX="22.0" layoutY="231.0">
+                     <image>
+                        <Image url="@../image/icons8_password_60px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
